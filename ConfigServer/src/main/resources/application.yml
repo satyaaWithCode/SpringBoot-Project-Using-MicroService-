@@ -1,0 +1,18 @@
+server:
+  .port: 8085
+
+spring:
+  application:
+    name: CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/satyaaWithCode/SpringBoot-Project-Using-MicroService-
+          clone-on-start: true
+          default-label: master
+
+# we can customize as per our need in gitHub & that will update in there
+#  like application-dev.yml , application-ap.yml , application-u.yml application should  be same ,we get data in config server
+
