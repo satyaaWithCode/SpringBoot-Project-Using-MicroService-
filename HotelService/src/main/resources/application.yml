@@ -12,6 +12,9 @@ spring:
     show-sql: true
   application:
     name: Hotel-SERVICE
+  config:
+    import:
+      - "configserver:http://localhost:8085"
 
 
 #    server will be register here

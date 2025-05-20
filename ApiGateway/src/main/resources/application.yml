@@ -29,6 +29,7 @@ spring:
     discovery:
       enabled: true
 
+
 #  server will be register here
 
 
@@ -42,3 +43,15 @@ eureka:
       register-with-eureka: true
       service-url:
         defaultZone: http://localhost:8761/eureka/
+
+# spring security configuration for api gateway
+
+
+okta:
+  oauth2:
+    issuer: https://dev-13071527.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oaotjgsajidiL2YT5d7
+    client-secret: GNSxqZYhg8TUSInifQwZabLzXwTHg3KaMr1mihqrJTb0YPAToqPA1wYVP3McQfQ0
+    scopes: openid, email , profile , offline_access
+
